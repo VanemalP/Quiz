@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">  
+
+  <title>My Quiz</title>
+</head>
+<body>
+  <div id="game-field">
+    <section id="landing">
+      <h1>Are you ready to get <span>quizzed</span>?</h1>
+      <button type="button" id="btn-start">Start the Quiz!</button>
+    </section>
+
+    <span id="start-counter"></span>
+    
+    <section id="questions" class="hide">
+      <h2 id="question">Test question</h2>
+      <div id="answers">
+        <button type="button" id="btn-answer1" class="answer-btn" value="1">Answer 1</button>
+        <button type="button" id="btn-answer2" class="answer-btn" value="2">Answer 2</button>
+        <button type="button" id="btn-answer3" class="answer-btn" value="3">Answer 3</button>
+        <button type="button" id="btn-answer4" class="answer-btn" value="4">Answer 4</button>
+      </div>
+      <div class="stats">
+        <div id="timer"></div>
+        <div id="question-count">Question <span></span></div>
+        <div id="score">Score <span></span></div>
+      </div>
+    </section>
+  </div>
+  <!-- Scripts -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
