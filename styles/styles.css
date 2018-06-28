@@ -14,14 +14,22 @@
   display: none;
 }
 .animate-bar {
-  animation: background-color 10s linear;
+  animation: timebar-color 10s linear;
   transition: width 1s linear;
+}
+@keyframes timebar-color {
+  0% {
+    background-color: #008000;
+  }
+  100% {
+    background-color: #ff0000;
+  }
 }
 .error {
   background-color: #ff0000;
 }
 .correct {
-  background-color: #00ff55;
+  background-color: #008000;
 }
 body {
   background-color: #ff9100;
@@ -165,14 +173,6 @@ button {
   margin-bottom: 15px;
   background-color: #008000;
   box-shadow: 0 0 3px rgba(156, 22, 22, 0.4);
-}
-@keyframes background-color {
-  0% {
-    background-color: #008000;
-  }
-  100% {
-    background-color: #ff0000;
-  }
 }
 #game-field #questions .stats #question-count {
   float: left;
